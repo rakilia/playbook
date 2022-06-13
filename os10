@@ -1,6 +1,6 @@
 ---
 - name: Backup DNOS10
-  hosts: 10os
+  hosts: switch31
   gather_facts: false
   vars:
     backup_dir: "/home/ilia/backup/"
