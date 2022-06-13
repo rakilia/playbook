@@ -1,0 +1,14 @@
+---
+- name: Backup DNOS10
+  hosts: dellos10
+  gather_facts: false
+  vars:
+    backup_dir: "/home/ilia/backup/"
+  collections:
+    - dellemc.os10
+  tasks:
+    - name: Backup
+      dellos10_config:
+        backup: yes
+        backup_options:
+          dir_path: "{{ backup_dir }}"
