@@ -8,7 +8,7 @@
     - dellemc.os10
   tasks:
     - name: Backup
-      dellos10_config:
+      os10_config:
         backup: yes
         backup_options:
           dir_path: "{{ backup_dir }}"
