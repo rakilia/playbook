@@ -1,9 +1,9 @@
 ---
 - name: Backup DNOS10
-  hosts: switch31
+  hosts: dellos10
   gather_facts: false
   vars:
-    backup_dir: "/home/ilia/backup/"
+    backup_dir: "/home/awxadmin/playbooks/backups/10"
   collections:
     - dellemc.os10
   tasks:
