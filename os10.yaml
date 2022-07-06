@@ -1,6 +1,6 @@
 ---
 - name: Backup DNOS10
-  hosts: dellos10
+  hosts: d31
   gather_facts: false
   vars:
     backup_dir: "/home/awxadmin/playbooks/backups/10"
