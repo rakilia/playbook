@@ -3,12 +3,12 @@
   hosts: d31
   gather_facts: false
   vars:
-    backup_dir: "/home/awxadmin/playbooks/backups/10"
+    backup_dir: "/home/awxadmin/"
   collections:
     - dellemc.os10
   tasks:
     - name: Backup
-      os10_config:
+      dellos10_config:
         backup: yes
         backup_options:
           dir_path: "{{ backup_dir }}"
