@@ -1,14 +1,14 @@
 ---
 - name: Backup DNOS10
-  hosts: d31
+  hosts: dellos10
   gather_facts: false
-  vars:
-    backup_dir: "/home/awxadmin/"
-  collections:
-    - dellemc.os10
+#  vars:
+#    backup_dir: "/home/awxadmin/"
+#  collections:
+#    - dellemc.os10
   tasks:
     - name: Backup
-      dellos10_config:
+      os10_config:
         backup: yes
         backup_options:
           dir_path: "{{ backup_dir }}"
