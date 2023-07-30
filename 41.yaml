@@ -1,6 +1,6 @@
 ---
 - name: Backup DSTUCK
-  hosts: 10.15.8.41
+  hosts: sw41
   gather_facts: false
   vars:
     backup_dir: "/home/awxadmin/playbooks/backups/41"
